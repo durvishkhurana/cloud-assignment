@@ -13,8 +13,10 @@ class MarksTest(unittest.TestCase):
                 calculate_percentage(marks)
 
     def test_grade(self):
-        self.assertEqual(calculate_grade(40), "Pass")
-        self.assertEqual(calculate_grade(39.9), "Fail")
+        self.assertEqual(calculate_grade(80), "A")
+        self.assertEqual(calculate_grade(60), "B")
+        self.assertEqual(calculate_grade(40), "C")
+        self.assertEqual(calculate_grade(39.9), "F")
 
 
 if __name__ == "__main__":

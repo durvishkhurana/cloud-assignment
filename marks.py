@@ -10,9 +10,13 @@ def calculate_percentage(marks):
 
 
 def calculate_grade(percentage):
+    if percentage >= 80:
+        return 10
+    if percentage >= 60:
+        return 8
     if percentage >= 40:
-        return "Pass"
-    return "Fail"
+        return 6
+    return 0
 
 
 def main():

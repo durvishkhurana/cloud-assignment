@@ -11,12 +11,12 @@ def calculate_percentage(marks):
 
 def calculate_grade(percentage):
     if percentage >= 80:
-        return "A"
+        return "A (10 points)"
     if percentage >= 60:
-        return "B"
+        return "B (8 points)"
     if percentage >= 40:
-        return "C"
-    return "F"
+        return "C (6 points)"
+    return "F (0 points)"
 
 
 def main():
